@@ -1,5 +1,5 @@
 https://github.com/lorraine98/musthaveHTML-CSS 깃헙예제소스
-## Ch1. 핵심요약
+## Ch2. 핵심요약
 1 클라이언트/서버 구조에서 클라이언트는 요청하고 서버는 응답합니다. HTTP 통신 규약을 이용한다. 이 통신 규약으로 실어 나르는 대상인 문서는 하이퍼텍스트 양식으로 되어 있고, 하이퍼텍스트는 HTML이라는 마크업 언어를 사용해 작성한다. 
 2 브라우저는 하이퍼텍스트를 해석해 보여주는 대표적인 클라이언트입니다.
 3 HTML은 하이퍼텍스트를 표현하는 마크업 언어로, 웹 페이지에 데이터를 구조적으로 기술하는 데 사용합니다. 
@@ -20,43 +20,46 @@ Vs code 에서 단축키 ctrl+/로 주석을 처리할 수 있습니다.
 
 HTML정보를 MDN, W3School에서 찾아 보세요. 스택오버플로(stackoverflow.com)를 사용하자. 
 
-CH4. 태그로 웹 페이지 만들기
-4.1 태그 이해하기 - 태그 표시하는 방법은 두 가지.
+## Ch3. 첫 코딩 도전하기
+vscode 플러그인 Auto close tag, HTML snippets, Live Server, Material Icon Theme, Prettier-code formatter, Korean Language Pack for Visual Studio Code 정도 추천해줌. 
+
+## Ch4. 태그로 웹 페이지 만들기
+#### 4.1 태그 이해하기 - 태그 표시하는 방법은 두 가지.
 <태그명> 요소 </태그명> 
 <태그명 요소 > : img, input, link
 
-4.2 대표적인 태그 알아보기
-h : 제목 태그, 별도의 줄바꿈 없이 자동으로 줄이 바뀜, 숫자가 커질수록 글자 크기가 작아짐(소제목으로 갈수록 덜 강조함)
+#### 4.2 대표적인 태그 알아보기
+- h : 제목 태그, 별도의 줄바꿈 없이 자동으로 줄이 바뀜, 숫자가 커질수록 글자 크기가 작아짐(소제목으로 갈수록 덜 강조함)
 html 한페이지에서 h1태그는 한 번만 사용하기
 h 태그는제모을 나타내는 코드이므로 문단 처음에 배치하기
 검색 엔진에 사용되는 태그이므로 검색어를 고려하기
 h1~6 순서대로 사용하기 (권장 사항)
 
-br, p, div, span
+- br, p, div, span
 break, 줄바꿈, 한 문단에서 줄을 바꿈, 줄바꿈이 1번 일어남
 paragraph, 문단, 문단을 나눔, 줄바꿈이 2번 일어남
 division, 영역 나눔, 페이지 안에서 영역을 나눔, 줄바꿈이 1번 일어남
 br이랑 미묘하게 같으면서도 다른것이 <br />은 자체로만 쓰이고 태그가 나오면 거기서 바로 줄을 바꾸게 되지만, <div> 영역 </div> 는시작과 끝에 대한 태그가 같이 세트로 움직이며 영역안에 있는 부분을 기준으로 앞과 뒤 모두 한줄씩 띄워주는 기능을 한다. 
 span, 범위, 줄바꿈을 하지 않은 채 글꼴, 색상, 여백 등을 조절, 줄바꿈이 일어나지 않음
 
-link
+- link
 <link rel = “속성“ href = “파일 경로”>
 예시: <link rel=“stylesheet” href=“style.css”>
 stylesheet 즉 CSS 속성을 가진 파일과 연결(관계)한다는 의미입니다.
 href=“style.css”는 style.css 파일을 링크합니다. 즉, 현재 파일에서 외부에 있는 자원인 style.css 파일을 스타일시트 관계로 연결시켜 사용한다는 뜻입니다. 
 
-a 태그: href 속성을사용해 링크로 이동할 수 있습니다. 
+- a 태그: href 속성을사용해 링크로 이동할 수 있습니다. 
 <a href=“https://google.com”>visit google</a>
 visit google 글자를 누르면 구글페이지로 이동된다. 
 
-img
+- img
 <img src=“경로“ alt=“설명” width=“폭“ height=”높이“>
 src:source  이미지 경로
 alt: alternative(대체하다)의 약자, 이미지 설명하는 문구
 width: 이미지 가로 크기, height: 이미지 세로 크기
 *html파일과 같은 폴더에 ~~.img파일이 있어야 제대로 실행된다.
  
-form
+- form
 <form action="myform.html">
     <label for="fname">First name:</label> 
     <input type="text" id="fname">
@@ -96,6 +99,7 @@ Hh1, p, form, label 등 지금까지  배운 대부분 태그가 여기 해당�
 비시맨틱 태그: 요소에 대하여 어떤 설명도 하지 않는 태그이다. div, span 등이 있다. 
 
 챕터 7부터 시작해도 될 듯. 오늘 안에 마무리 하는 것 목표로 해보자.
+
 ## Ch.7 CSS가 뭐지?
 1 Html 자체에서 style 태그를 통해서 일괄적으로 스타일을 지정해주는 방법이 있고, 
 2 .css 파일에서 원하는 스타일을 입력한 다음 <head> </head>에서 
